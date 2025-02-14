@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:study_app/Components/Button/PrimaryButton.dart';
 import 'package:study_app/Components/Constants/Stylesheet.dart';
+import 'package:study_app/Components/Constants/img.dart';
 import 'package:study_app/Components/TextField/PrimaryTextfield.dart';
 import 'package:study_app/Res/Services/AppServices.dart';
 import 'package:study_app/Utils/Routes/RoutesScreen.dart';
@@ -20,9 +21,17 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Align(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  AppImg.appicon,
+                  scale: 8,
+                ),
+              ),
+              heightY(35),
               const Text("Welcome Back"),
               const Text("Glad to See You Again!"),
-              heightY(10),
+              heightY(20),
               PrimaryTxtField(
                 hint_txt: "Enter Your Email",
                 title: "Email",

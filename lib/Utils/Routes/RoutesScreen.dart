@@ -10,7 +10,7 @@ final List<GetPage<dynamic>> approutes = [
   ),
   GetPage(
     name: RouteNames.SignupScreen,
-    page: () => const SignupScreen(),
+    page: () => SignupScreen(),
   ),
   GetPage(
     name: RouteNames.LoginScreen,

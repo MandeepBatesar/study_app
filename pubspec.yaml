@@ -38,6 +38,8 @@ dependencies:
   google_fonts: ^6.2.1
   flutter_screenutil: ^5.9.3
   get: ^4.6.6
+  country_state_city_picker: ^1.2.8
+  
 
 dev_dependencies:
   flutter_test:
@@ -62,8 +64,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/icons/
+    - assets/img/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

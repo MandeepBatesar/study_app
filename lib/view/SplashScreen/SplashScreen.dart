@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:study_app/Components/Constants/img.dart';
 import 'package:study_app/Utils/Routes/RoutesScreen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,9 +20,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
-        child: Center(child: Text("Welcome To StudyApp")),
+        child: Center(
+            child: Image.asset(
+          AppImg.appicon,
+          scale: 4,
+        )),
       ),
     );
   }
